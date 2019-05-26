@@ -10,5 +10,15 @@
   <%= @comparison.description %>
 </p>
 
+<% if @comparison.images.attached? %>
+<p>
+  <strong>Images:</strong>
+  <br>
+  <% @comparison.images.each do |image| %>
+    <%= image_tag(image) %>
+  <% end %>
+</p>
+<% end %>
+
 <%= link_to 'Edit', edit_comparison_path(@comparison) %> |
 <%= link_to 'Back', comparisons_path %>

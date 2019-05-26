@@ -8,3 +8,4 @@ Resources
 3. https://blog.grillwork.io/create-a-ruby-on-rails-5-1-application-with-webpack-react-16-and-react-router-e2c16d267f73
 4. https://learnetto.com/blog/3-ways-to-use-react-with-ruby-on-rails-5
 5. https://www.pluralsight.com/guides/building-a-crud-interface-with-react-and-ruby-on-rails
+6. https://phase2online.com/blog/2018/10/03/easily-upload-files-with-active-storage-in-rails-5-2/

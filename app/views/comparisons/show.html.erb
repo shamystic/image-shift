@@ -10,13 +10,14 @@
   <%= @comparison.description %>
 </p>
 
-<% if @comparison.image.attached? %>
-<!-- @comparison.image.present? will always return true, use attached? to check presence -->
-  <p>
-    <strong>Image:</strong>
-    <br>
-    <%= image_tag @comparison.image %>
-  </p>
+<% if @comparison.images.attached? %>
+<p>
+  <strong>Images:</strong>
+  <br>
+  <% @comparison.images.each do |image| %>
+    <%= image_tag image %>
+  <% end %>
+</p>
 <% end %>
 
 <%= link_to 'Edit', edit_comparison_path(@comparison) %> |

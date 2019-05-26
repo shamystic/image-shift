@@ -69,6 +69,7 @@ class ComparisonsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def comparison_params
-      params.require(:comparison).permit(:title, :description, images: [])
+      # params.require(:comparison).permit(:title, :description, images: [])
+      params.require(:comparison).permit(:title, :content, :image)
     end
 end

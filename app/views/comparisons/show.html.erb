@@ -1,4 +1,5 @@
-<%= stylesheet_link_tag "main" %>
+<%= stylesheet_link_tag "main.css" %>
+<%= javascript_include_tag "script.js" %>
 
 <p id="notice"><%= notice %></p>
 
@@ -21,6 +22,11 @@
   <% end %>
 </p>
 <% end %>
+
+<p>
+	<img alt="" src="https://i.ytimg.com/vi/zGYsq7cbVZA/hqdefault.jpg" 
+	id="imgClickAndChange" onclick="changeImage()"  />
+</p>
 
 <%= link_to 'Edit', edit_comparison_path(@comparison) %> |
 <%= link_to 'Back', comparisons_path %>
